@@ -98,8 +98,9 @@ def predict_image(path, model, categories):
     print("The predicted image is: " + categories[model.predict(l)[0]])
 
 # Now you can use this function for any image
-path1 = 'F:\\machine_learning_LAB\\nicolas-falgetelli-ihHcWBnLPtE-unsplash.jpg'
-path2 = 'F:\\machine_learning_LAB\\sofia-guaico-xqqjZznrar0-unsplash.jpg'
+path1 = 'nicolas-falgetelli-ihHcWBnLPtE-unsplash.jpg'
+path2 = 'sofia-guaico-xqqjZznrar0-unsplash.jpg'
 
 predict_image(path1, model, Categories)
 predict_image(path2, model, Categories)
+
