@@ -66,3 +66,8 @@ print(f"R_2 score is {r2_score(Y_test, Y_test_pred)}")
 print(f'The value of slope is {β1}')
 β0 = lin_reg.intercept_
 print(f'The value of intercept is {β0}')
+# Predict salary for 6 years of experience
+years_of_experience = np.array([[6]])  # 2D array as the model expects input in this format
+predicted_salary = lin_reg.predict(years_of_experience)
+
+print(f'Predicted salary for 6 years of experience: ${predicted_salary[0]:.2f}')
